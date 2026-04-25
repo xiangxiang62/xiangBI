@@ -18,10 +18,10 @@ spring:
   # Redis 配置
   redis:
     database: 0
-    host: xx
+    host: 121.5.162.9
     port: 6379
     timeout: 5000
-    password: xxx
+    password: mohan
   rabbitmq:
     host: ${RABBITMQ_HOST:localhost}
     port: ${RABBITMQ_PORT:5672}
@@ -52,5 +52,5 @@ mybatis-plus:
       logic-not-delete-value:  0 # 逻辑未删除值（默认为 0）
 aliyun:
   qianwen:
-    api-key: xxxx
+    api-key: 你的 API key
     model: qwen-turbo  # 可选: qwen-turbo, qwen-plus, qwen-max, qwen-max-longcontext

@@ -82,8 +82,8 @@ const Login: React.FC = () => {
         <LoginForm
           submitter={{
             searchConfig: {
-              submitText: '注册'
-            }
+              submitText: '注册',
+            },
           }}
           contentStyle={{
             minWidth: 280,
@@ -91,7 +91,7 @@ const Login: React.FC = () => {
           }}
           logo={<img alt="logo" src="/logo.svg" />}
           title="XiangBI"
-          subTitle={<a href="https://github.com/panther125">XiangBI 个人学习所获</a>}
+          subTitle={<a href="https://github.com/xiangxiang62">XiangBI 个人学习所获</a>}
           initialValues={{
             autoLogin: true,
           }}
@@ -141,19 +141,19 @@ const Login: React.FC = () => {
                 ]}
               />
               <ProFormText.Password
-              name="checkPassword"
-              fieldProps={{
-                size: 'large',
-                prefix: <LockOutlined />,
-              }}
-              placeholder={'重复密码'}
-              rules={[
-                {
-                  required: true,
-                  message: '重复密码是必填项！',
-                },
-              ]}
-            />
+                name="checkPassword"
+                fieldProps={{
+                  size: 'large',
+                  prefix: <LockOutlined />,
+                }}
+                placeholder={'重复密码'}
+                rules={[
+                  {
+                    required: true,
+                    message: '重复密码是必填项！',
+                  },
+                ]}
+              />
             </>
           )}
         </LoginForm>

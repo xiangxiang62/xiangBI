@@ -147,6 +147,7 @@ export default defineConfig({
   ],
   mfsu: {
     strategy: 'normal',
+    cacheDirectory: join(__dirname, '../.mfsu'),
   },
   requestRecord: {},
 });
