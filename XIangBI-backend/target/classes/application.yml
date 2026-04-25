@@ -1,0 +1,56 @@
+spring:
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  # session 配置
+  session:
+    store-type: none
+    # session 30 天过期
+    timeout: 2592000
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bi?serveTimezone=Asha/Shanghai
+    username: root
+    password: 123456
+  # Redis 配置
+  redis:
+    database: 0
+    host: 121.5.162.9
+    port: 6379
+    timeout: 5000
+    password: mohan
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+    virtual-host: ${RABBITMQ_VHOST:/}
+  # 文件上传
+  servlet:
+    multipart:
+      # 大小限制
+      max-file-size: 10MB
+server:
+  port: 9001
+  servlet:
+    context-path: /api
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为 1）
+      logic-not-delete-value:  0 # 逻辑未删除值（默认为 0）
+aliyun:
+  qianwen:
+    api-key: sk-f670318d78b347e3842977d631617a65
+    model: qwen-turbo  # 可选: qwen-turbo, qwen-plus, qwen-max, qwen-max-longcontext
