@@ -1,0 +1,72 @@
+/**
+ * XiangBI File: src/main/java/com/panther/smartBI/model/vo/LoginUserVO.java
+ * Responsibility: Domain model and transfer object definition.
+ */
+package com.panther.smartBI.model.vo;
+
+import java.io.Serializable;
+import java.util.Date;
+import lombok.Data;
+
+/**
+ * 已登录用户视图（脱敏）
+ *
+ **/
+@Data
+public class LoginUserVO implements Serializable {
+
+    /**
+     * 用户 id
+     */
+    private Long id;
+
+    /**
+     * 用户昵称
+     */
+    private String userName;
+
+    /**
+     * 用户头像
+     */
+    private String userAvatar;
+
+    /**
+     * 用户简介
+     */
+    private String userProfile;
+
+    /**
+     * 用户角色：user/admin/ban
+     */
+    private String userRole;
+
+    /**
+     * 电话
+     */
+    private String phoneNum;
+
+    /**
+     * 邮箱
+     */
+    private String email;
+
+    /**
+     * 积分
+     */
+    private Integer leftCount;
+
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
+
+/**
+ * 序列化版本号。
+ */
+    private static final long serialVersionUID = 1L;
+}

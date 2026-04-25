@@ -1,0 +1,11 @@
+com\panther\smartBI\model\entity\Announcement.class
+com\panther\smartBI\config\JsonConfig$2.class
+com\panther\smartBI\service\impl\AnnouncementServiceImpl.class
+com\panther\smartBI\model\dto\announcement\AnnouncementQueryRequest.class
+com\panther\smartBI\model\dto\announcement\AnnouncementAddRequest.class
+com\panther\smartBI\controller\AnnouncementController.class
+com\panther\smartBI\config\JsonConfig$1.class
+com\panther\smartBI\service\AnnouncementService.class
+com\panther\smartBI\config\RabbitMQConfig.class
+com\panther\smartBI\model\dto\announcement\AnnouncementUpdateRequest.class
+com\panther\smartBI\mapper\AnnouncementMapper.class
