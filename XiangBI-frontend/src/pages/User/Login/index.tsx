@@ -91,9 +91,7 @@ const Login: React.FC = () => {
           logo={<img alt="logo" src="/logo.svg" />}
           title="XiangBI"
           subTitle={
-            <a href="https://gincode.icu" target="_blank" rel="noreferrer">
-              欢迎共同交流和开发(QQ:2392189963@qq.com\wechat:panther0139)
-            </a>
+             "欢迎来到享智能 BI"
           }
           onFinish={async (values) => {
             await handleSubmit(values as API.UserLoginRequest);
